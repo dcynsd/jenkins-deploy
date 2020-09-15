@@ -18,7 +18,7 @@ services:
     restart: always
     environment: 
       GITLAB_OMNIBUS_CONFIG: |
-        external_url 'http://192.168.1.150'
+        external_url 'ssh://192.168.1.150:2222'
     ports: 
       - '2222:22'
       - '80:80'
